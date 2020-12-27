@@ -14,7 +14,8 @@ Repo to demonstrate Laundry App UI in Android app. This is a follow up on the so
 - [Medium](https://medium.com/@RayLiVerified/create-a-bottom-navigation-bar-the-easy-way-part-1-ec2f5f9122b)
 - [Flat Icon](https://www.flaticon.com)
 - [UnDraw Illustration](https://undraw.co)
-- etc
+- [Alvarcarto Maps](https://alvarcarto.com)
+- etc.
 
 # Demo App
 
