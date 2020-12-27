@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.message.MessageFragment">
+
+    <RelativeLayout
+        android:background="@drawable/bg_half_rounded2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Layout After Login -->
+        <RelativeLayout
+            android:id="@+id/container_after_login"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <!-- Layout Before Login -->
+        <RelativeLayout
+            android:id="@+id/container_before_login"
+            android:visibility="visible"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bg_message"
+                android:src="@drawable/bg_message"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+
+            <Button
+                android:id="@+id/button_login"
+                android:text="Login"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_item_rounded"
+                android:layout_below="@+id/bg_message"
+                android:layout_centerHorizontal="true"
+                android:layout_width="100dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:layout_below="@+id/button_login"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginBottom="70dp"
+                android:textColor="@color/dark_late_gray"
+                android:fontFamily="@font/nunito_black"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:text="Login with your Whatsapp number for use this feature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

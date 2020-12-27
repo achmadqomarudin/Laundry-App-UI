@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_recommended"
+    android:layout_width="250dp"
+    android:layout_height="100dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="90dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/silver"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_late_gray"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/item_recommended_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_toStartOf="@+id/item_recommended_price"
+            android:ellipsize="end"
+            android:fontFamily="@font/nunito_black"
+            android:maxLines="2"
+            android:text="Title"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/item_recommended_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/nunito_black"
+            android:paddingEnd="10dp"
+            android:text="9.5"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/item_text_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_recommended_price"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:text="Score"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/nunito_black"
+            android:text="Closed"
+            android:textColor="@color/light_sea_green" />
+
+        <ImageView
+            android:id="@+id/image_location"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginBottom="2dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_location"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/item_recommended_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/image_location"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:text="Location"
+            android:textColor="@color/dark_gray"
+            android:textSize="11sp"
+            tools:ignore="SmallSp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

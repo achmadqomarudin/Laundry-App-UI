@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LaundryAppUI" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/light_sea_green</item>
+        <item name="colorPrimaryVariant">@color/light_sea_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Custom Theme -->
+    <style name="Theme.LaundryAppUI.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SearchView" parent="">
+        <item name="android:editTextColor">@color/dark_late_gray</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="tint">@android:color/black</item>
+    </style>
+
+    <style name="Theme.LaundryAppUI.NavigationView">
+        <item name="fontFamily">@font/nunito_bold</item>
+        <item name="itemIconTint">@color/drawer_item_color</item>
+        <item name="itemTextColor">@color/drawer_item_color</item>
+    </style>
+
+    <style name="Theme.LaundryAppUI.Chip">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.LaundryAppUI.RatingBar">
+        <item name="colorControlNormal">@color/dark_gray</item>
+        <item name="colorControlActivated">@color/orange</item>
+        <item name="ratingBarStyle">?android:attr/ratingBarStyleSmall</item>
+    </style>
+</resources>

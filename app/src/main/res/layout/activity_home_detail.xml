@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/silver"
+    tools:context=".menu.home.home_detail.HomeDetailActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bg_post2" />
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_recommended"
+        android:elevation="10dp"
+        android:src="@drawable/ic_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded_dark"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_black"
+                android:text="Papa Laundry"
+                android:textColor="@color/dark_late_gray"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/image_location"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_below="@+id/text_name"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/item_recommended_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_name"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/image_location"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="Jl. Kenangan saat bersamamu (1.3 km)"
+                android:textColor="@color/dark_gray"
+                android:textSize="11sp"
+                tools:ignore="SmallSp" />
+
+            <RatingBar
+                android:id="@+id/rating"
+                android:theme="@style/Theme.LaundryAppUI.RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_recommended_location"
+                android:layout_marginTop="5dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="0.1" />
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_recommended_location"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/image_location"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="5 Stars"
+                android:textColor="@color/dark_gray"
+                android:textSize="11sp"
+                tools:ignore="SmallSp" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_rounded_white"
+                android:elevation="10dp"
+                android:src="@drawable/ic_favorite" />
+
+            <TextView
+                android:id="@+id/text_periode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito_black"
+                android:text="Work Period"
+                android:textColor="@color/dark_late_gray"
+                android:textSize="16sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_periode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_periode"
+                android:scrollbars="horizontal"
+                app:singleLine="true">
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="Weekly"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Theme.LaundryAppUI.Chip"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/light_sea_green" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="Biweekly"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Theme.LaundryAppUI.Chip"
+                    android:textColor="@color/dark_gray"
+                    app:chipBackgroundColor="@color/white"
+                    app:chipStrokeColor="@color/dark_gray"
+                    app:chipStrokeWidth="1dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="Monthly"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Theme.LaundryAppUI.Chip"
+                    android:textColor="@color/dark_gray"
+                    app:chipBackgroundColor="@color/white"
+                    app:chipStrokeColor="@color/dark_gray"
+                    app:chipStrokeWidth="1dp" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chip_group_periode"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito_black"
+                android:text="Work Time"
+                android:textColor="@color/dark_late_gray"
+                android:textSize="16sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_time"
+                android:scrollbars="horizontal"
+                app:singleLine="true">
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="07:00"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Theme.LaundryAppUI.Chip"
+                    android:textColor="@color/dark_gray"
+                    app:chipBackgroundColor="@color/white"
+                    app:chipStrokeColor="@color/dark_gray"
+                    app:chipStrokeWidth="1dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="10:00"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Theme.LaundryAppUI.Chip"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/light_sea_green" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="14:00"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Theme.LaundryAppUI.Chip"
+                    android:textColor="@color/dark_gray"
+                    app:chipBackgroundColor="@color/white"
+                    app:chipStrokeColor="@color/dark_gray"
+                    app:chipStrokeWidth="1dp" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <ImageButton
+                android:id="@+id/button_telepon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_circle_gray_line"
+                android:src="@drawable/ic_phone"
+                android:tint="@color/dark_gray" />
+
+            <ImageButton
+                android:id="@+id/button_chat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/button_telepon"
+                android:background="@drawable/bg_circle_gray_line"
+                android:src="@drawable/ic_chat"
+                android:tint="@color/dark_gray" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_circle_green_line"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="Make Appointment"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

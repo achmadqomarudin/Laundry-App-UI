@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="220dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/white"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        tools:ignore="RtlSymmetry">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_laundry"
+            android:tint="@color/white"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:id="@+id/atv_name_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/nunito_black"
+            android:gravity="center_horizontal"
+            android:text="Laundry App UI"
+            android:textColor="@color/dark_late_gray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_email_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_bold"
+            android:paddingBottom="15dp"
+            android:text="laundryappui@gmail.com"
+            android:textColor="@color/dark_late_gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_menu_home"
+        android:checked="true"
+        android:icon="@drawable/ic_home_selector"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/nav_menu_search"
+        android:icon="@drawable/ic_search_selector"
+        android:title="@string/menu_search" />
+    <item
+        android:id="@+id/nav_menu_notification"
+        android:icon="@drawable/ic_notifications_selector"
+        android:title="@string/menu_notification" />
+    <item
+        android:id="@+id/nav_menu_message"
+        android:icon="@drawable/ic_messages_selector"
+        android:title="@string/menu_message" />
+</menu>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Laundry App UI</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_notification">Notification</string>
+    <string name="menu_message">Message</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="version_app">version 1.1</string>
+    <string name="recommended">Recommended</string>
+    <string name="more">More</string>
+    <string name="dry_cleaning">Dry Cleaning</string>
+    <string name="wash_and_iron"><![CDATA[Wash & Iron]]></string>
+    <string name="ironing">Ironing</string>
+    <string name="choose_services">Choose Services</string>
+</resources>
